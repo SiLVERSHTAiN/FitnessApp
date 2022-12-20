@@ -9,27 +9,35 @@ import UIKit
 
 enum Resources {
     enum Colors {
-        static var active = UIColor(hexString: "#437BFE")
-        static var inActive = UIColor(hexString: "#929DA5")
+        static let active = UIColor(hexString: "#437BFE")
+        static let inActive = UIColor(hexString: "#929DA5")
+        static let titleGray = UIColor(hexString: "#545C77")
+        static let background = UIColor(hexString: "#F8F9F9")
         
-        static var separator = UIColor(hexString: "#E8ECEF")
+        static let separator = UIColor(hexString: "#E8ECEF")
     }
     
     enum Strings {
         enum TabBar {
-            static var overview = "Overview"
-            static var session = "Session"
-            static var progress = "Progress"
-            static var settings = "Settings"
+            static let overview = "Overview"
+            static let session = "Session"
+            static let progress = "Progress"
+            static let settings = "Settings"
+        }
+        
+        enum Fonts {
+            static func helveticaRegular(with size: CGFloat) -> UIFont {
+                UIFont(name: "Helvetica", size: size) ?? UIFont()
+            }
         }
     }
     
     enum Image {
         enum TabBar {
-            static var overview = UIImage(named: "overview")
-            static var session = UIImage(named: "session")
-            static var progress = UIImage(named: "progress")
-            static var settings = UIImage(named: "settings")
+            static let overview = UIImage(named: "overview")
+            static let session = UIImage(named: "session")
+            static let progress = UIImage(named: "progress")
+            static let settings = UIImage(named: "settings")
         }
     }
 }
