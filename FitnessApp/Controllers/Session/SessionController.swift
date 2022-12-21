@@ -14,8 +14,9 @@ class SessionController: BaseController {
 
         title = "High Intensity Cardio"
         navigationController?.tabBarItem.title = Resources.Strings.TabBar.session
-        addNavBarButton(at: .left, with: "Pause")
-        addNavBarButton(at: .right, with: "Finish")
+        
+        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
+        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
     }
     
     override func navBarLeftButtonHandler() {
