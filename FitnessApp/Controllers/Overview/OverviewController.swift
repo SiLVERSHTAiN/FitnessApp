@@ -11,10 +11,6 @@ class OverviewController: BaseController {
     
     private let navBar = OverviewNavBar()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.overview
-    }
 }
 
 extension OverviewController {
@@ -28,19 +24,17 @@ extension OverviewController {
     override func layoutViews() {
         super.layoutViews()
         
-        NSLayoutConstraint.activate([
-            
+        NSLayoutConstraint.activate([            
             navBar.topAnchor.constraint(equalTo: view.topAnchor),
             navBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             navBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            navBar.heightAnchor.constraint(equalToConstant: 113),
-            
         ])
     }
     
     override func configure() {
         super.configure()
         
+        navigationController?.navigationBar.isHidden = true
         navBar.translatesAutoresizingMaskIntoConstraints = false
 
     }
