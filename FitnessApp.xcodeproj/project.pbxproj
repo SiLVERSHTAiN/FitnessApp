@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69095C4D2954904F00892F83 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69095C4C2954904F00892F83 /* WeekView.swift */; };
+		69095C4F2954925F00892F83 /* WeekDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69095C4E2954925F00892F83 /* WeekDayView.swift */; };
+		69095C51295499F300892F83 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69095C50295499F300892F83 /* Date + ext.swift */; };
 		691F899B29508D46001ED8E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F899A29508D46001ED8E7 /* AppDelegate.swift */; };
 		691F899D29508D46001ED8E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F899C29508D46001ED8E7 /* SceneDelegate.swift */; };
 		691F899F29508D46001ED8E7 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F899E29508D46001ED8E7 /* OverviewController.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69095C4C2954904F00892F83 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		69095C4E2954925F00892F83 /* WeekDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDayView.swift; sourceTree = "<group>"; };
+		69095C50295499F300892F83 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		691F899729508D46001ED8E7 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		691F899A29508D46001ED8E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		691F899C29508D46001ED8E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69095C4B2954900F00892F83 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				69095C4C2954904F00892F83 /* WeekView.swift */,
+				69095C4E2954925F00892F83 /* WeekDayView.swift */,
+			);
+			path = WeekView;
+			sourceTree = "<group>";
+		};
 		691F898E29508D46001ED8E7 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +134,7 @@
 			children = (
 				691F89B32950A539001ED8E7 /* UIColor + ext.swift */,
 				691F89BE2951DB53001ED8E7 /* UIView + ext.swift */,
+				69095C50295499F300892F83 /* Date + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 		6929EF7C29534E3B002BA839 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69095C4B2954900F00892F83 /* WeekView */,
 				6929EF7D29534E52002BA839 /* SecondaryButton.swift */,
 				695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */,
 			);
@@ -258,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69095C4D2954904F00892F83 /* WeekView.swift in Sources */,
+				69095C51295499F300892F83 /* Date + ext.swift in Sources */,
 				691F899F29508D46001ED8E7 /* OverviewController.swift in Sources */,
 				691F89CC2951E824001ED8E7 /* SettingsController.swift in Sources */,
 				695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */,
@@ -271,6 +290,7 @@
 				691F89CA2951E815001ED8E7 /* ProgressController.swift in Sources */,
 				691F89B42950A539001ED8E7 /* UIColor + ext.swift in Sources */,
 				695BDCCF29535140001EF9C7 /* BaseView.swift in Sources */,
+				69095C4F2954925F00892F83 /* WeekDayView.swift in Sources */,
 				691F89BD29518454001ED8E7 /* BaseController.swift in Sources */,
 				691F899D29508D46001ED8E7 /* SceneDelegate.swift in Sources */,
 			);
