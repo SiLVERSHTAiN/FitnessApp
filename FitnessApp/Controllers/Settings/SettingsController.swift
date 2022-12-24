@@ -8,11 +8,11 @@
 import UIKit
 
 class SettingsController: BaseController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = "Settings"
-        navigationController?.tabBarItem.title = Resources.Strings.TabBar.settings
+        navigationController?.tabBarItem.title = Resources.Strings.TabBar.title(for: .settings)
     }
 }
