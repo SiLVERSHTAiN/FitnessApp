@@ -9,8 +9,19 @@ import UIKit
 
 final class OverviewNavBar: BaseView {
     
-    private let titleLabel = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
+    private let titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.text = Resources.Strings.NavBar.overview
+        titleLabel.textColor = Resources.Colors.titleGray
+        titleLabel.font = Resources.Strings.Fonts.helveticaRegular(with: 22)
+        return titleLabel
+    }()
+    private var allWorkoutsButton: SecondaryButton = {
+        let button = SecondaryButton(with: .secondary)
+        button.setTitle(Resources.Strings.Overview.allWorkuotsButton)
+        return button
+    }()
+    
     private let addButton = UIButton()
     private let weekView = WeekView()
     
@@ -69,12 +80,6 @@ extension OverviewNavBar {
         super.configureAppearance()
         
         backgroundColor = .white
-        
-        titleLabel.text = Resources.Strings.NavBar.overview
-        titleLabel.textColor = Resources.Colors.titleGray
-        titleLabel.font = Resources.Strings.Fonts.helveticaRegular(with: 22)
-        
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkuotsButton)
         
         addButton.setImage(Resources.Image.Common.addButtonImage, for: .normal)
 

@@ -10,8 +10,8 @@ import SwiftUI
 
 class SessionController: BaseController {
 
-    private let timerView: BaseInfoView = {
-        let view = BaseInfoView(with: "test", buttonTitle: "last 7 days")
+    private let timerView: WABaseInfoView = {
+        let view = WABaseInfoView(with: "test", buttonTitle: "Test Button")
         
         return view
     }()

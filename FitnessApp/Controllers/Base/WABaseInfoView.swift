@@ -7,13 +7,12 @@
 
 import UIKit
 
-class BaseInfoView: BaseView {
+class WABaseInfoView: BaseView {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = Resources.Strings.Fonts.helveticaRegular(with: 13)
         label.textColor = Resources.Colors.inActive
-        
         return label
     }()
     private let contentView: UIView = {
@@ -25,17 +24,13 @@ class BaseInfoView: BaseView {
         return view
     }()
     
-    private let button: UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .blue
-        return button
-    }()
+    private let button = SecondaryButton(with: .primary)
     
     init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
         button.isHidden = buttonTitle == nil ? true : false
-        button.setTitle(buttonTitle, for: .normal)
+        button.setTitle(buttonTitle)
         super .init(frame: .zero)
     }
     
@@ -48,7 +43,7 @@ class BaseInfoView: BaseView {
     }
 }
 
-extension BaseInfoView {
+extension WABaseInfoView {
     
     override func setupViews() {
         super.setupViews()
@@ -71,7 +66,7 @@ extension BaseInfoView {
             
             button.trailingAnchor.constraint(equalTo: trailingAnchor),
             button.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            button.widthAnchor.constraint(equalToConstant: 100),
+            button.widthAnchor.constraint(equalToConstant: 130),
             button.heightAnchor.constraint(equalToConstant: 30),
             
             contentView.topAnchor.constraint(equalTo: contentTopAnchor, constant: contentTopOffset),
