@@ -11,7 +11,7 @@ import SwiftUI
 class SessionController: BaseController {
 
     private let timerView: BaseInfoView = {
-        let view = BaseInfoView(with: "test", alignment: .center)
+        let view = BaseInfoView(with: "test", buttonTitle: "last 7 days")
         
         return view
     }()
