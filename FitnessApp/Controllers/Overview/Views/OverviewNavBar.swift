@@ -16,8 +16,8 @@ final class OverviewNavBar: BaseView {
         titleLabel.font = Resources.Strings.Fonts.helveticaRegular(with: 22)
         return titleLabel
     }()
-    private var allWorkoutsButton: SecondaryButton = {
-        let button = SecondaryButton(with: .secondary)
+    private var allWorkoutsButton: WAButton = {
+        let button = WAButton(with: .secondary)
         button.setTitle(Resources.Strings.Overview.allWorkuotsButton)
         return button
     }()
@@ -62,7 +62,7 @@ extension OverviewNavBar {
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -15),
             allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
+//            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130),
             
             titleLabel.centerYAnchor.constraint(equalTo: allWorkoutsButton.centerYAnchor),
             titleLabel.trailingAnchor.constraint(equalTo: allWorkoutsButton.leadingAnchor),

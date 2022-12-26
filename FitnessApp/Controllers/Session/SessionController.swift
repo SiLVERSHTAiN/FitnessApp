@@ -11,7 +11,7 @@ import SwiftUI
 class SessionController: BaseController {
 
     private let timerView: WABaseInfoView = {
-        let view = WABaseInfoView(with: "test", buttonTitle: "Test Button")
+        let view = WABaseInfoView(with: "test", buttonTitle: "Test Button".uppercased())
         
         return view
     }()

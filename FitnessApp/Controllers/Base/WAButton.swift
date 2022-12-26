@@ -12,7 +12,7 @@ public enum WAButtonType {
     case secondary
 }
 
-final class SecondaryButton: UIButton {
+final class WAButton: UIButton {
     
     private var type: WAButtonType = .primary
     
@@ -49,7 +49,7 @@ final class SecondaryButton: UIButton {
     }
 }
 
-private extension SecondaryButton {
+private extension WAButton {
     
     func addViews() {
         setupView(label)
@@ -57,26 +57,36 @@ private extension SecondaryButton {
     }
     
     func layoutViews() {
+        
+        var horisontalOffset: CGFloat {
+            switch type {
+            case .primary:
+                return 0
+            case .secondary:
+                return 10
+            }
+        }
+        
         NSLayoutConstraint.activate([
             iconView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            iconView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -horisontalOffset),
             iconView.heightAnchor.constraint(equalToConstant: 5),
             iconView.widthAnchor.constraint(equalToConstant: 10),
             
             label.centerYAnchor.constraint(equalTo: centerYAnchor),
-            label.trailingAnchor.constraint(equalTo: iconView.leadingAnchor),
-            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10)
+            label.trailingAnchor.constraint(equalTo: iconView.leadingAnchor, constant: -10),
+            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: horisontalOffset * 2)
         ])
     }
     
     func configure() {
         
         switch type {
-        case .secondary:
+        case .primary:
             label.textColor = Resources.Colors.inActive
             iconView.tintColor = Resources.Colors.inActive
             label.font = Resources.Strings.Fonts.helveticaRegular(with: 13)
-        case .primary:
+        case .secondary:
             backgroundColor = Resources.Colors.secondary
             layer.cornerRadius = 14
             label.textColor = Resources.Colors.active
