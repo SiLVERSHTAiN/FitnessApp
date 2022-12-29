@@ -18,7 +18,7 @@ extension WeekView {
             
             let startOfWeek = Date().startOfWeek
             let currentDay = startOfWeek.agoForward(to: index)
-            let day = Calendar.current.component(.day, from: currentDay)
+            let day = Date.calendar.component(.day, from: currentDay)
             
             let isToday = currentDay.stripTime() == Date().stripTime()
             
