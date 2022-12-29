@@ -11,7 +11,7 @@ final class TimerView: WABaseInfoView {
     
     private let progressView: ProgressView = {
         let progressView = ProgressView()
-        progressView.drawProgress(with: 0.7)
+        progressView.drawProgress(with: 0.0)
         
         return progressView
     }()
