@@ -10,14 +10,15 @@ import SwiftUI
 
 class SessionController: BaseController {
 
-    private let timerView: TimerView = {
-        let view = TimerView()
-        
-        return view
-    }()
+    private let timerView = TimerView()
+    private let timerDuration = 3.0
     
     override func navBarLeftButtonHandler() {
-        print("Session NavBar left button tapped")
+        
+    }
+    
+    override func navBarRightButtonHandler() {
+        
     }
 }
 
@@ -48,6 +49,8 @@ extension SessionController {
         
         addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
         addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
+        
+        timerView.configure(with: timerDuration, progress: 0)
     }
 }
 
