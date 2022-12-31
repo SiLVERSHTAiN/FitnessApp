@@ -14,11 +14,13 @@ class SessionController: BaseController {
     private let timerDuration = 3.0
     
     override func navBarLeftButtonHandler() {
-        
+        if timerView.state == .isStopped {
+            timerView.startTimer()
+        }
     }
     
     override func navBarRightButtonHandler() {
-        
+        timerView.stopTimer()
     }
 }
 
