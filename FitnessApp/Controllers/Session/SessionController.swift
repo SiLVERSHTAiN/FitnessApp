@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class SessionController: BaseController {
+class SessionController: WABaseController {
 
     private let timerView = TimerView()
     private let timerDuration = 3.0
@@ -16,11 +16,18 @@ class SessionController: BaseController {
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
             timerView.startTimer()
+        } else {
+            timerView.pauseTimer()
         }
+        timerView.state = timerView.state == .isRuning ? .isStopped : .isRuning
+        setTitleForNavBarButton(timerView.state == .isRuning ? Resources.Strings.Session.navBarPause : Resources.Strings.Session.navBarStart,
+                                at: .left)
     }
     
     override func navBarRightButtonHandler() {
         timerView.stopTimer()
+        timerView.state = .isStopped
+        setTitleForNavBarButton(Resources.Strings.Session.navBarStart, at: .right)
     }
 }
 
@@ -49,8 +56,8 @@ extension SessionController {
         title = Resources.Strings.NavBar.session
         navigationController?.tabBarItem.title = Resources.Strings.TabBar.title(for: .session)
         
-        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarLeft)
-        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarRight)
+        addNavBarButton(at: .left, with: Resources.Strings.Session.navBarStart)
+        addNavBarButton(at: .right, with: Resources.Strings.Session.navBarFinish)
         
         timerView.configure(with: timerDuration, progress: 0)
     }
