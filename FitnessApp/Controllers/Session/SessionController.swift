@@ -11,7 +11,7 @@ import SwiftUI
 class SessionController: WABaseController {
 
     private let timerView = TimerView()
-    private let timerDuration = 3.0
+    private let timerDuration = 15.0
     
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
@@ -27,7 +27,7 @@ class SessionController: WABaseController {
     override func navBarRightButtonHandler() {
         timerView.stopTimer()
         timerView.state = .isStopped
-        setTitleForNavBarButton(Resources.Strings.Session.navBarStart, at: .right)
+        setTitleForNavBarButton(Resources.Strings.Session.navBarFinish, at: .right)
     }
 }
 
