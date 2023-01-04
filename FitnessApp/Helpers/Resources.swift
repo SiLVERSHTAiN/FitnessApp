@@ -47,6 +47,9 @@ enum Resources {
             static let navBarStart = "Start"
             static let navBarPause = "Pause"
             static let navBarFinish = "Finish"
+            
+            static let elapsedTime = "Elapsed Times"
+            static let remainigTime = "Remaining Time"
         }
         
         enum Progress {
