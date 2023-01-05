@@ -29,7 +29,8 @@
 		691F89CC2951E824001ED8E7 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F89CB2951E824001ED8E7 /* SettingsController.swift */; };
 		6929EF7E29534E52002BA839 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6929EF7D29534E52002BA839 /* WAButton.swift */; };
 		695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */; };
-		695BDCCF29535140001EF9C7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCE29535140001EF9C7 /* BaseView.swift */; };
+		695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCE29535140001EF9C7 /* WABaseView.swift */; };
+		696B59C929670CF200E30DE3 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696B59C829670CF200E30DE3 /* PercentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +58,8 @@
 		691F89CB2951E824001ED8E7 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		6929EF7D29534E52002BA839 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
-		695BDCCE29535140001EF9C7 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		695BDCCE29535140001EF9C7 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
+		696B59C829670CF200E30DE3 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,7 @@
 		69095C532955C72300892F83 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				695BDCCE29535140001EF9C7 /* BaseView.swift */,
+				695BDCCE29535140001EF9C7 /* WABaseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +112,7 @@
 			children = (
 				69145556295AC09D002F39A3 /* TimerView.swift */,
 				69145558295AC22E002F39A3 /* ProgressView.swift */,
+				696B59C829670CF200E30DE3 /* PercentView.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				691F89BF2951DB53001ED8E7 /* UIView + ext.swift in Sources */,
 				691F89B12950A355001ED8E7 /* TabBarController.swift in Sources */,
 				691F899B29508D46001ED8E7 /* AppDelegate.swift in Sources */,
+				696B59C929670CF200E30DE3 /* PercentView.swift in Sources */,
 				691F89C62951E7F6001ED8E7 /* SessionController.swift in Sources */,
 				69095C552955C78500892F83 /* WABaseInfoView.swift in Sources */,
 				69145557295AC09D002F39A3 /* TimerView.swift in Sources */,
@@ -333,7 +337,7 @@
 				691F89B82950A6FD001ED8E7 /* Resources.swift in Sources */,
 				691F89CA2951E815001ED8E7 /* ProgressController.swift in Sources */,
 				691F89B42950A539001ED8E7 /* UIColor + ext.swift in Sources */,
-				695BDCCF29535140001EF9C7 /* BaseView.swift in Sources */,
+				695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */,
 				69095C4F2954925F00892F83 /* WeekDayView.swift in Sources */,
 				691F89BD29518454001ED8E7 /* WABaseController.swift in Sources */,
 				691F899D29508D46001ED8E7 /* SceneDelegate.swift in Sources */,

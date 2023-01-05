@@ -13,6 +13,7 @@ enum Resources {
         static let inActive = UIColor(hexString: "#929DA5")
         
         static let titleGray = UIColor(hexString: "#545C77")
+        static let subtitleGray = UIColor(hexString: "D8D8D8")
         
         static let background = UIColor(hexString: "#F8F9F9")
         static let separator = UIColor(hexString: "#E8ECEF")
