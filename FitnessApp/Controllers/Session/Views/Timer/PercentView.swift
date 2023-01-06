@@ -29,7 +29,7 @@ extension TimerView {
         private let subtitleLabel: UILabel = {
             let label = UILabel()
             label.font = Resources.Strings.Fonts.helveticaRegular(with: 10)
-            label.textColor = Resources.Colors.subtitleGray
+            label.textColor = Resources.Colors.inActive
             label.textAlignment = .center
            return label
         }()

@@ -13,7 +13,6 @@ enum Resources {
         static let inActive = UIColor(hexString: "#929DA5")
         
         static let titleGray = UIColor(hexString: "#545C77")
-        static let subtitleGray = UIColor(hexString: "D8D8D8")
         
         static let background = UIColor(hexString: "#F8F9F9")
         static let separator = UIColor(hexString: "#E8ECEF")
@@ -45,12 +44,23 @@ enum Resources {
         }
         
         enum Session {
-            static let navBarStart = "Start"
+            static let navBarStart = "Start   "
             static let navBarPause = "Pause"
             static let navBarFinish = "Finish"
             
             static let elapsedTime = "Elapsed Times"
             static let remainigTime = "Remaining Time"
+            
+            static let completed = "COMPLETED"
+            static let remaining = "REMAINING"
+            
+            static let workoutStats = "Workout stats"
+            static let averagePace = "Average pace"
+            static let heartRate = "Heart rate"
+            static let totalDistance = "Total distance"
+            static let totalSteps = "Total steps"
+            
+            static let stepsCounter = "Steps Counter"
         }
         
         enum Progress {
@@ -75,6 +85,13 @@ enum Resources {
                 case .settings: return UIImage(named: "settings_tab")
                 }
             }
+        }
+        
+        enum Stats {
+            static let heartRate = UIImage(named: "stats_heartRate")
+            static let averagePace = UIImage(named: "stats_averagePace")
+            static let totalSteps = UIImage(named: "stats_totalSteps")
+            static let totalDistance = UIImage(named: "steps_totalDistance")
         }
         
         enum Common {
