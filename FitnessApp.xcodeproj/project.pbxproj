@@ -28,6 +28,8 @@
 		691F89CA2951E815001ED8E7 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F89C92951E815001ED8E7 /* ProgressController.swift */; };
 		691F89CC2951E824001ED8E7 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F89CB2951E824001ED8E7 /* SettingsController.swift */; };
 		6929EF7E29534E52002BA839 /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6929EF7D29534E52002BA839 /* WAButton.swift */; };
+		6954FD962969D3CA008C1889 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FD952969D3CA008C1889 /* StatsView.swift */; };
+		6954FD992969DA9B008C1889 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FD982969DA9B008C1889 /* StatsItemView.swift */; };
 		695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */; };
 		695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCE29535140001EF9C7 /* WABaseView.swift */; };
 		696B59C929670CF200E30DE3 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696B59C829670CF200E30DE3 /* PercentView.swift */; };
@@ -57,6 +59,8 @@
 		691F89C92951E815001ED8E7 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		691F89CB2951E824001ED8E7 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		6929EF7D29534E52002BA839 /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
+		6954FD952969D3CA008C1889 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		6954FD982969DA9B008C1889 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
 		695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		695BDCCE29535140001EF9C7 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		696B59C829670CF200E30DE3 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				6914555A295AC232002F39A3 /* Timer */,
+				6954FD932969CE57008C1889 /* Stats */,
+				6954FD942969CE6B008C1889 /* Steps */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +255,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		6954FD932969CE57008C1889 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				6954FD972969DA38008C1889 /* Views */,
+				6954FD952969D3CA008C1889 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		6954FD942969CE6B008C1889 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		6954FD972969DA38008C1889 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6954FD982969DA9B008C1889 /* StatsItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,11 +364,13 @@
 				69145559295AC22E002F39A3 /* ProgressView.swift in Sources */,
 				6929EF7E29534E52002BA839 /* WAButton.swift in Sources */,
 				691F89BA29517E67001ED8E7 /* NavBarController.swift in Sources */,
+				6954FD992969DA9B008C1889 /* StatsItemView.swift in Sources */,
 				691F89B82950A6FD001ED8E7 /* Resources.swift in Sources */,
 				691F89CA2951E815001ED8E7 /* ProgressController.swift in Sources */,
 				691F89B42950A539001ED8E7 /* UIColor + ext.swift in Sources */,
 				695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */,
 				69095C4F2954925F00892F83 /* WeekDayView.swift in Sources */,
+				6954FD962969D3CA008C1889 /* StatsView.swift in Sources */,
 				691F89BD29518454001ED8E7 /* WABaseController.swift in Sources */,
 				691F899D29508D46001ED8E7 /* SceneDelegate.swift in Sources */,
 			);
