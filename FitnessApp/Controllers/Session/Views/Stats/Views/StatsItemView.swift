@@ -7,9 +7,37 @@
 
 import UIKit
 
+enum StatsItem {
+    case heartRate(value: String)
+    case averagePace(value: String)
+    case totalSteps(value: String)
+    case totalDistance(value: String)
+    
+    var data: StatsItemView.ItemData {
+        switch self {
+        case .heartRate(let value):
+            return .init(image: Resources.Image.Stats.heartRate,
+                         value: value + "bmp",
+                         title: Resources.Strings.Session.heartRate)
+        case .averagePace(let value):
+            return .init(image: Resources.Image.Stats.averagePace,
+                         value: value + " / km",
+                         title: Resources.Strings.Session.averagePace)
+        case .totalSteps(let value):
+            return .init(image: Resources.Image.Stats.totalSteps,
+                         value: value,
+                         title: Resources.Strings.Session.totalSteps)
+        case .totalDistance(let value):
+            return .init(image: Resources.Image.Stats.totalDistance,
+                         value: value + "km",
+                         title: Resources.Strings.Session.totalDistance)
+        }
+    }
+}
+
 final class StatsItemView: WABaseView {
     
-    struct StatsItem {
+    struct ItemData {
         let image: UIImage?
         let value: String
         let title: String
@@ -39,9 +67,9 @@ final class StatsItemView: WABaseView {
     }()
     
     func configure(with item: StatsItem) {
-        imageView.image = item.image 
-        statsLabel.text = item.value
-        subtitleStatsLabel.text = item.title
+        imageView.image = item.data.image
+        statsLabel.text = item.data.value
+        subtitleStatsLabel.text = item.data.title.uppercased()
     }
 }
 

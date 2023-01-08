@@ -15,7 +15,7 @@ class WABaseInfoView: WABaseView {
         label.textColor = Resources.Colors.inActive
         return label
     }()
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view  = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = Resources.Colors.separator.cgColor
