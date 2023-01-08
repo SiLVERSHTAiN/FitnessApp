@@ -54,7 +54,7 @@ extension TimerView {
             ])
         }
         
-        func configure(with title: String, andValue  value: Int) {
+        func configure(with title: String, andValue value: Int) {
             subtitleLabel.text = title
             percentLabel.text = "\(value)%"
         }
