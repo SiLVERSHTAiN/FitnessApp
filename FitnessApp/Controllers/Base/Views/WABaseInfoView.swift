@@ -80,6 +80,4 @@ extension WABaseInfoView {
         
         backgroundColor = .clear
     }
-    
-    
 }

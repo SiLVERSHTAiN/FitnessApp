@@ -45,14 +45,14 @@ final class StatsItemView: WABaseView {
     
     private let imageView = UIImageView()
     
-    private let statsLabel: UILabel = {
+    private let valueLabel: UILabel = {
         let label = UILabel()
         label.font = Resources.Strings.Fonts.helveticaRegular(with: 17)
         label.textColor = Resources.Colors.titleGray
         return label
     }()
     
-    private let subtitleStatsLabel: UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = Resources.Strings.Session.heartRate.uppercased()
         label.font = Resources.Strings.Fonts.helveticaRegular(with: 10)
@@ -68,8 +68,8 @@ final class StatsItemView: WABaseView {
     
     func configure(with item: StatsItem) {
         imageView.image = item.data.image
-        statsLabel.text = item.data.value
-        subtitleStatsLabel.text = item.data.title.uppercased()
+        valueLabel.text = item.data.value
+        titleLabel.text = item.data.title.uppercased()
     }
 }
 
@@ -80,8 +80,8 @@ extension StatsItemView {
         
         setupView(imageView)
         setupView(stackView)
-        stackView.addArrangedSubview(statsLabel)
-        stackView.addArrangedSubview(subtitleStatsLabel)
+        stackView.addArrangedSubview(valueLabel)
+        stackView.addArrangedSubview(titleLabel)
     }
     
     override func constraintViews () {

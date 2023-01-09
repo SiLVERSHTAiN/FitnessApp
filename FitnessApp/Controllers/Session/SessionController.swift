@@ -12,7 +12,7 @@ class SessionController: WABaseController {
 
     private let timerView = TimerView()
     private let statsView = StatsView(with: Resources.Strings.Session.workoutStats)
-    private let stepsView = WABaseInfoView(with: Resources.Strings.Session.stepsCounter)
+    private let stepsView = StepsView(with: Resources.Strings.Session.stepsCounter)
     
     private let timerDuration = 15.0
     
@@ -79,6 +79,12 @@ extension SessionController {
                                    .averagePace(value: "9'20''"),
                                    .totalSteps(value: "7,682"),
                                    .totalDistance(value: "8.25")])
+        
+        stepsView.configure(with: [.init(value: "8k", title: "2/13", heightParm: 1),
+                                   .init(value: "7k", title: "2/14", heightParm: 0.8),
+                                   .init(value: "5k", title: "2/15", heightParm: 0.6),
+                                   .init(value: "6k", title: "2/16", heightParm: 0.7)
+        ])
     }
 }
 
