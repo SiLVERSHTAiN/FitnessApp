@@ -34,6 +34,10 @@
 		6954FD9E296C6146008C1889 /* WABarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FD9D296C6146008C1889 /* WABarsView.swift */; };
 		6954FDA1296C617F008C1889 /* WABarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDA0296C617F008C1889 /* WABarView.swift */; };
 		6954FDA5296D3588008C1889 /* DailyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDA4296D3588008C1889 /* DailyPerformanceView.swift */; };
+		6954FDA8296D7349008C1889 /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDA7296D7349008C1889 /* MonthlyPerformanceView.swift */; };
+		6954FDAD296D7ACE008C1889 /* WAChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDAC296D7ACE008C1889 /* WAChartsView.swift */; };
+		6954FDAF296D9538008C1889 /*  YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDAE296D9538008C1889 /*  YAxisView.swift */; };
+		6954FDB1296D9A22008C1889 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDB0296D9A22008C1889 /* XAxisView.swift */; };
 		695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */; };
 		695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCE29535140001EF9C7 /* WABaseView.swift */; };
 		696B59C929670CF200E30DE3 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696B59C829670CF200E30DE3 /* PercentView.swift */; };
@@ -69,6 +73,10 @@
 		6954FD9D296C6146008C1889 /* WABarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarsView.swift; sourceTree = "<group>"; };
 		6954FDA0296C617F008C1889 /* WABarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarView.swift; sourceTree = "<group>"; };
 		6954FDA4296D3588008C1889 /* DailyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerformanceView.swift; sourceTree = "<group>"; };
+		6954FDA7296D7349008C1889 /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
+		6954FDAC296D7ACE008C1889 /* WAChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartsView.swift; sourceTree = "<group>"; };
+		6954FDAE296D9538008C1889 /*  YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " YAxisView.swift"; sourceTree = "<group>"; };
+		6954FDB0296D9A22008C1889 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
 		695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		695BDCCE29535140001EF9C7 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		696B59C829670CF200E30DE3 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
@@ -294,7 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				6954FD9F296C6169008C1889 /* Views */,
-				6954FD9D296C6146008C1889 /* WABarsView.swift */,
 			);
 			path = WABarsView;
 			sourceTree = "<group>";
@@ -302,7 +309,8 @@
 		6954FD9F296C6169008C1889 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6954FDA0296C617F008C1889 /* WABarView.swift */,
+				6954FDAA296D7A80008C1889 /* WAChartsView */,
+				6954FDA9296D7A65008C1889 /* WABarsView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,17 +318,53 @@
 		6954FDA2296D3545008C1889 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6954FDA3296D3562008C1889 /* Performance */,
+				6954FDA6296D72F9008C1889 /* MonthlyPerformance */,
+				6954FDA3296D3562008C1889 /* DailyPerformance */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		6954FDA3296D3562008C1889 /* Performance */ = {
+		6954FDA3296D3562008C1889 /* DailyPerformance */ = {
 			isa = PBXGroup;
 			children = (
 				6954FDA4296D3588008C1889 /* DailyPerformanceView.swift */,
 			);
-			path = Performance;
+			path = DailyPerformance;
+			sourceTree = "<group>";
+		};
+		6954FDA6296D72F9008C1889 /* MonthlyPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				6954FDA7296D7349008C1889 /* MonthlyPerformanceView.swift */,
+			);
+			path = MonthlyPerformance;
+			sourceTree = "<group>";
+		};
+		6954FDA9296D7A65008C1889 /* WABarsView */ = {
+			isa = PBXGroup;
+			children = (
+				6954FD9D296C6146008C1889 /* WABarsView.swift */,
+				6954FDA0296C617F008C1889 /* WABarView.swift */,
+			);
+			path = WABarsView;
+			sourceTree = "<group>";
+		};
+		6954FDAA296D7A80008C1889 /* WAChartsView */ = {
+			isa = PBXGroup;
+			children = (
+				6954FDAB296D7AA4008C1889 /* Views */,
+				6954FDAC296D7ACE008C1889 /* WAChartsView.swift */,
+			);
+			path = WAChartsView;
+			sourceTree = "<group>";
+		};
+		6954FDAB296D7AA4008C1889 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6954FDAE296D9538008C1889 /*  YAxisView.swift */,
+				6954FDB0296D9A22008C1889 /* XAxisView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,21 +437,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6954FDAF296D9538008C1889 /*  YAxisView.swift in Sources */,
 				69095C4D2954904F00892F83 /* WeekView.swift in Sources */,
 				69095C51295499F300892F83 /* Date + ext.swift in Sources */,
 				691F899F29508D46001ED8E7 /* OverviewController.swift in Sources */,
 				691F89CC2951E824001ED8E7 /* SettingsController.swift in Sources */,
 				695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */,
+				6954FDA8296D7349008C1889 /* MonthlyPerformanceView.swift in Sources */,
 				691F89BF2951DB53001ED8E7 /* UIView + ext.swift in Sources */,
 				691F89B12950A355001ED8E7 /* TabBarController.swift in Sources */,
 				6954FDA1296C617F008C1889 /* WABarView.swift in Sources */,
 				691F899B29508D46001ED8E7 /* AppDelegate.swift in Sources */,
 				6954FDA5296D3588008C1889 /* DailyPerformanceView.swift in Sources */,
+				6954FDAD296D7ACE008C1889 /* WAChartsView.swift in Sources */,
 				696B59C929670CF200E30DE3 /* PercentView.swift in Sources */,
 				691F89C62951E7F6001ED8E7 /* SessionController.swift in Sources */,
 				69095C552955C78500892F83 /* WABaseInfoView.swift in Sources */,
 				69145557295AC09D002F39A3 /* TimerView.swift in Sources */,
 				69145559295AC22E002F39A3 /* ProgressView.swift in Sources */,
+				6954FDB1296D9A22008C1889 /* XAxisView.swift in Sources */,
 				6954FD9B296C5F77008C1889 /* StepsView.swift in Sources */,
 				6929EF7E29534E52002BA839 /* WAButton.swift in Sources */,
 				691F89BA29517E67001ED8E7 /* NavBarController.swift in Sources */,

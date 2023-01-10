@@ -69,6 +69,9 @@ enum Resources {
             
             static let dailyPerformance = "Dayli Performance"
             static let last7Days = "Last 7 days"
+            
+            static let monthlyPerformanceView = "Monthly Performance"
+            static let last10Month = "Last 10 month"
         }
         
         enum Fonts {
