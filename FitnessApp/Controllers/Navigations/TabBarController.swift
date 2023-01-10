@@ -19,7 +19,7 @@ final class TabBarController: UITabBarController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         configureAppearance()
-        swichTo(tab: .session)
+        swichTo(tab: .progress)
     }
     
     required init?(coder: NSCoder) {

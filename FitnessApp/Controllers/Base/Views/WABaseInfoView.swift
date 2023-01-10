@@ -30,7 +30,7 @@ class WABaseInfoView: WABaseView {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
         button.isHidden = buttonTitle == nil ? true : false
-        button.setTitle(buttonTitle)
+        button.setTitle(buttonTitle?.uppercased())
         super .init(frame: .zero)
     }
     
