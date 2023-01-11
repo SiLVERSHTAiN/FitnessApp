@@ -12,7 +12,7 @@ final class YAxisView: WABaseView {
     private let stackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
-        view.distribution = .fillEqually
+        view.distribution = .equalSpacing
         return view
     }()
     

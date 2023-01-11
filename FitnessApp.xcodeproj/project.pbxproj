@@ -38,6 +38,7 @@
 		6954FDAD296D7ACE008C1889 /* WAChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDAC296D7ACE008C1889 /* WAChartsView.swift */; };
 		6954FDAF296D9538008C1889 /*  YAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDAE296D9538008C1889 /*  YAxisView.swift */; };
 		6954FDB1296D9A22008C1889 /* XAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDB0296D9A22008C1889 /* XAxisView.swift */; };
+		6954FDB3296ED732008C1889 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDB2296ED732008C1889 /* ChartView.swift */; };
 		695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */; };
 		695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCE29535140001EF9C7 /* WABaseView.swift */; };
 		696B59C929670CF200E30DE3 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696B59C829670CF200E30DE3 /* PercentView.swift */; };
@@ -77,6 +78,7 @@
 		6954FDAC296D7ACE008C1889 /* WAChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartsView.swift; sourceTree = "<group>"; };
 		6954FDAE296D9538008C1889 /*  YAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " YAxisView.swift"; sourceTree = "<group>"; };
 		6954FDB0296D9A22008C1889 /* XAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisView.swift; sourceTree = "<group>"; };
+		6954FDB2296ED732008C1889 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		695BDCCE29535140001EF9C7 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		696B59C829670CF200E30DE3 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			children = (
 				6954FDAE296D9538008C1889 /*  YAxisView.swift */,
 				6954FDB0296D9A22008C1889 /* XAxisView.swift */,
+				6954FDB2296ED732008C1889 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */,
 				69095C4F2954925F00892F83 /* WeekDayView.swift in Sources */,
 				6954FD9E296C6146008C1889 /* WABarsView.swift in Sources */,
+				6954FDB3296ED732008C1889 /* ChartView.swift in Sources */,
 				6954FD962969D3CA008C1889 /* StatsView.swift in Sources */,
 				691F89BD29518454001ED8E7 /* WABaseController.swift in Sources */,
 				691F899D29508D46001ED8E7 /* SceneDelegate.swift in Sources */,
