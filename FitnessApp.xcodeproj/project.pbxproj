@@ -42,6 +42,7 @@
 		695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */; };
 		695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695BDCCE29535140001EF9C7 /* WABaseView.swift */; };
 		696B59C929670CF200E30DE3 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696B59C829670CF200E30DE3 /* PercentView.swift */; };
+		697BEAB029A65A4C0033EF13 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697BEAAF29A65A4C0033EF13 /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		695BDCCC295350CC001EF9C7 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		695BDCCE29535140001EF9C7 /* WABaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseView.swift; sourceTree = "<group>"; };
 		696B59C829670CF200E30DE3 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
+		697BEAAF29A65A4C0033EF13 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 		691F89C12951DE14001ED8E7 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				697BEAAD29A65A130033EF13 /* CollectionView */,
 				6929EF7C29534E3B002BA839 /* Views */,
 				691F899E29508D46001ED8E7 /* OverviewController.swift */,
 			);
@@ -370,6 +373,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		697BEAAD29A65A130033EF13 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				697BEAAE29A65A2D0033EF13 /* Views */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		697BEAAE29A65A2D0033EF13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				697BEAAF29A65A4C0033EF13 /* SectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -467,6 +486,7 @@
 				691F89CA2951E815001ED8E7 /* ProgressController.swift in Sources */,
 				691F89B42950A539001ED8E7 /* UIColor + ext.swift in Sources */,
 				695BDCCF29535140001EF9C7 /* WABaseView.swift in Sources */,
+				697BEAB029A65A4C0033EF13 /* SectionHeaderView.swift in Sources */,
 				69095C4F2954925F00892F83 /* WeekDayView.swift in Sources */,
 				6954FD9E296C6146008C1889 /* WABarsView.swift in Sources */,
 				6954FDB3296ED732008C1889 /* ChartView.swift in Sources */,
