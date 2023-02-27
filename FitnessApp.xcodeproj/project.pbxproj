@@ -13,6 +13,7 @@
 		69095C552955C78500892F83 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69095C542955C78500892F83 /* WABaseInfoView.swift */; };
 		69145557295AC09D002F39A3 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69145556295AC09D002F39A3 /* TimerView.swift */; };
 		69145559295AC22E002F39A3 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69145558295AC22E002F39A3 /* ProgressView.swift */; };
+		6919B90A29AD06F400FF70BE /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6919B90929AD06F400FF70BE /* TrainingCellView.swift */; };
 		691F899B29508D46001ED8E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F899A29508D46001ED8E7 /* AppDelegate.swift */; };
 		691F899D29508D46001ED8E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F899C29508D46001ED8E7 /* SceneDelegate.swift */; };
 		691F899F29508D46001ED8E7 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691F899E29508D46001ED8E7 /* OverviewController.swift */; };
@@ -52,6 +53,7 @@
 		69095C542955C78500892F83 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
 		69145556295AC09D002F39A3 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		69145558295AC22E002F39A3 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		6919B90929AD06F400FF70BE /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 		691F899729508D46001ED8E7 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		691F899A29508D46001ED8E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		691F899C29508D46001ED8E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				697BEAAF29A65A4C0033EF13 /* SectionHeaderView.swift */,
+				6919B90929AD06F400FF70BE /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				691F899F29508D46001ED8E7 /* OverviewController.swift in Sources */,
 				691F89CC2951E824001ED8E7 /* SettingsController.swift in Sources */,
 				695BDCCD295350CC001EF9C7 /* OverviewNavBar.swift in Sources */,
+				6919B90A29AD06F400FF70BE /* TrainingCellView.swift in Sources */,
 				6954FDA8296D7349008C1889 /* MonthlyPerformanceView.swift in Sources */,
 				691F89BF2951DB53001ED8E7 /* UIView + ext.swift in Sources */,
 				691F89B12950A355001ED8E7 /* TabBarController.swift in Sources */,

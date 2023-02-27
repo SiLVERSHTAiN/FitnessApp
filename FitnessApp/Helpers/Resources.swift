@@ -93,6 +93,10 @@ enum Resources {
             }
         }
         
+        enum Overview {
+            static let rightArrow = UIImage(named: "right arrow")
+        }
+        
         enum Stats {
             static let heartRate = UIImage(named: "stats_heartRate")
             static let averagePace = UIImage(named: "stats_averagePace")
