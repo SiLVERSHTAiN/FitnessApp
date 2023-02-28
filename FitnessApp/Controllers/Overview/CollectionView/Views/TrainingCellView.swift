@@ -11,15 +11,15 @@ final class TrainingCellView: UICollectionViewCell {
     
     static let id = "TrainingCellView"
     
-    private let checkmarkView: UIImageView = {
-        let view = UIImageView()
-        
-        return view
-    }()
+    private let checkmarkView = UIImageView(image: Resources.Image.Overview.notDone)
     
-    private let rightArrowView: UIImageView = {
-        let view = UIImageView()
-        view.image = Resources.Image.Overview.rightArrow
+    private let rightArrowView = UIImageView(image: Resources.Image.Overview.rightArrow)
+    
+    private let stackView: UIStackView = {
+        let view = UIStackView()
+        view.axis = .vertical
+//        view.distribution = .fillProportionally
+        view.spacing = 3
         return view
     }()
     
@@ -53,26 +53,45 @@ final class TrainingCellView: UICollectionViewCell {
         configureAppearance()
     }
     
-    func configure(with date: Date) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE, MMMM dd"
+    func configure(with title: String, subtitle: String, isDone: Bool) {
+        self.title.text = title
+        self.subTitle.text = subtitle
         
-        self.title.text = dateFormatter.string(from: date).uppercased()
+        checkmarkView.image = isDone ? Resources.Image.Overview.done : Resources.Image.Overview.notDone
     }
 }
 
 private extension TrainingCellView {
     func setupViews() {
-        setupView(title)
+        setupView(checkmarkView)
+        setupView(rightArrowView)
+        setupView(stackView)
+        [title, subTitle].forEach(stackView.addArrangedSubview)
     }
     
     func constaintViews() {
         NSLayoutConstraint.activate([
-            title.centerXAnchor.constraint(equalTo: centerXAnchor),
-            title.centerYAnchor.constraint(equalTo: centerYAnchor)
+            checkmarkView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15),
+            checkmarkView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            checkmarkView.widthAnchor.constraint(equalToConstant: 28),
+            checkmarkView.heightAnchor.constraint(equalTo: checkmarkView.widthAnchor),
+            
+            stackView.leadingAnchor.constraint(equalTo: checkmarkView.trailingAnchor, constant: 15),
+            stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            stackView.trailingAnchor.constraint(equalTo: rightArrowView.leadingAnchor, constant: -15),
+            
+            rightArrowView.widthAnchor.constraint(equalToConstant: 7),
+            rightArrowView.heightAnchor.constraint(equalToConstant: 12),
+            rightArrowView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+            rightArrowView.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
     
-    func configureAppearance() {}
+    func configureAppearance() {
+        backgroundColor = .white
+        layer.borderWidth = 1
+        layer.borderColor = Resources.Colors.separator.cgColor
+        
+    }
 }
 

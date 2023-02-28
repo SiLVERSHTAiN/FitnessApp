@@ -94,7 +94,9 @@ enum Resources {
         }
         
         enum Overview {
-            static let rightArrow = UIImage(named: "right arrow")
+            static let done = UIImage(named: "done")
+            static let notDone = UIImage(named: "not_done")
+            static let rightArrow = UIImage(named: "right_arrow")
         }
         
         enum Stats {
