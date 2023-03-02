@@ -7,6 +7,10 @@
 
 import UIKit
 
+enum CellRoundedType {
+    case top, bottom, all, notRounded
+}
+
 final class TrainingCellView: UICollectionViewCell {
     
     static let id = "TrainingCellView"
@@ -18,7 +22,6 @@ final class TrainingCellView: UICollectionViewCell {
     private let stackView: UIStackView = {
         let view = UIStackView()
         view.axis = .vertical
-//        view.distribution = .fillProportionally
         view.spacing = 3
         return view
     }()
@@ -30,7 +33,7 @@ final class TrainingCellView: UICollectionViewCell {
         return lable
     }()
     
-    private let subTitle: UILabel = {
+    private let subtitle: UILabel = {
         let lable = UILabel()
         lable.font = Resources.Strings.Fonts.helveticaRegular(with: 13)
         lable.textColor = Resources.Colors.inActive
@@ -53,11 +56,18 @@ final class TrainingCellView: UICollectionViewCell {
         configureAppearance()
     }
     
-    func configure(with title: String, subtitle: String, isDone: Bool) {
+    func configure(with title: String, subtitle: String, isDone: Bool, roundedType: CellRoundedType) {
         self.title.text = title
-        self.subTitle.text = subtitle
+        self.subtitle.text = subtitle
         
         checkmarkView.image = isDone ? Resources.Image.Overview.done : Resources.Image.Overview.notDone
+        
+        switch roundedType {
+        case .all: self.roundCorners([.allCorners], radius: 5)
+        case .bottom: self.roundCorners([.bottomLeft, .bottomRight], radius: 5)
+        case .top: self.roundCorners([.topLeft, .topRight], radius: 5)
+        case .notRounded: self.roundCorners([.allCorners], radius: 0)
+        }
     }
 }
 
@@ -66,7 +76,7 @@ private extension TrainingCellView {
         setupView(checkmarkView)
         setupView(rightArrowView)
         setupView(stackView)
-        [title, subTitle].forEach(stackView.addArrangedSubview)
+        [title, subtitle].forEach(stackView.addArrangedSubview)
     }
     
     func constaintViews() {
@@ -91,7 +101,6 @@ private extension TrainingCellView {
         backgroundColor = .white
         layer.borderWidth = 1
         layer.borderColor = Resources.Colors.separator.cgColor
-        
     }
 }
 
